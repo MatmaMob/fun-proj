@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorAutumnGray</color>
+    <color name="colorPrimaryDark">@color/colorAutumnBrown</color>
+    <color name="colorAccent">@color/colorAutumnYellow</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack40">#33000000</color>
+
+    <color name="colorAutumnGray">#565752</color>
+    <color name="colorAutumnBrown">#8c7166</color>
+    <color name="colorAutumnYellow">#DE9D66</color>
+</resources>
