@@ -1,13 +1,12 @@
-package com.example.anotheruselessapp
+package com.example.anotheruselessapp.activities
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.widget.LinearLayout
-import androidx.core.view.isEmpty
 import androidx.lifecycle.observe
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.anotheruselessapp.R
+import com.example.anotheruselessapp.adapters.UselessAdapter
 import com.example.anotheruselessapp.data.entity.Element
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.*
@@ -50,15 +49,16 @@ class MainActivity : BaseActivity() {
     private fun setUselessList(elements: List<Element>) {
         removeUselessInformation()
         val lm = LinearLayoutManager(this)
-        val adapter = UselessAdapter(elements, {
-            GlobalScope.launch(Dispatchers.IO) {
-                viewModel.updateElement(it)
+        val adapter =
+            UselessAdapter(elements, {
+                GlobalScope.launch(Dispatchers.IO) {
+                    viewModel.updateElement(it)
+                }
+            }) {
+                GlobalScope.launch(Dispatchers.IO) {
+                    viewModel.deleteElement(it)
+                }
             }
-        }) {
-            GlobalScope.launch(Dispatchers.IO) {
-                viewModel.deleteElement(it)
-            }
-        }
         uselessRecycler.layoutManager = lm
         uselessRecycler.adapter = adapter
 

@@ -2,7 +2,7 @@ package com.example.anotheruselessapp.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.anotheruselessapp.ElementRepository
+import com.example.anotheruselessapp.repository.ElementRepository
 
 class ElementViewModelFactory(private val elementRepository: ElementRepository) :
     ViewModelProvider.Factory {

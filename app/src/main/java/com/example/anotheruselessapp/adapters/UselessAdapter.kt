@@ -1,9 +1,10 @@
-package com.example.anotheruselessapp
+package com.example.anotheruselessapp.adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.anotheruselessapp.R
 import com.example.anotheruselessapp.data.entity.Element
 import com.example.anotheruselessapp.ui.UselessElementView
 

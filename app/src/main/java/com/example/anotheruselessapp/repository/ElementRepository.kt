@@ -1,4 +1,4 @@
-package com.example.anotheruselessapp
+package com.example.anotheruselessapp.repository
 
 import android.content.Context
 import androidx.lifecycle.LiveData
@@ -6,8 +6,6 @@ import androidx.room.Room
 import com.example.anotheruselessapp.data.db.AppDatabase
 import com.example.anotheruselessapp.data.entity.Element
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 class ElementRepository(context: Context) {

@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.switchMap
-import com.example.anotheruselessapp.ElementRepository
+import com.example.anotheruselessapp.repository.ElementRepository
 import com.example.anotheruselessapp.data.entity.Element
 
 class ElementViewModel(private val elementRepository: ElementRepository) : ViewModel() {

@@ -1,9 +1,7 @@
-package com.example.anotheruselessapp
+package com.example.anotheruselessapp.activities
 
 import android.os.Bundle
-import android.view.Window
-import androidx.transition.Explode
-import com.example.anotheruselessapp.data.Priority
+import com.example.anotheruselessapp.R
 import com.example.anotheruselessapp.data.entity.Element
 import kotlinx.android.synthetic.main.activity_create_shit.*
 import kotlinx.coroutines.*
