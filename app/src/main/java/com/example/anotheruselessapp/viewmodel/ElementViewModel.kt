@@ -6,8 +6,10 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.switchMap
 import com.example.anotheruselessapp.repository.ElementRepository
 import com.example.anotheruselessapp.data.entity.Element
+import javax.inject.Inject
 
-class ElementViewModel(private val elementRepository: ElementRepository) : ViewModel() {
+class ElementViewModel @Inject constructor(private val elementRepository: ElementRepository) :
+    ViewModel() {
 
     private val elementTrigger = MutableLiveData(Unit)
 

@@ -8,7 +8,9 @@ import com.example.anotheruselessapp.data.entity.Element
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-class ElementRepository(context: Context) {
+class ElementRepository(
+    context: Context
+) {
 
     private val db: AppDatabase by lazy {
         Room.databaseBuilder(context, AppDatabase::class.java, "db_elements")
