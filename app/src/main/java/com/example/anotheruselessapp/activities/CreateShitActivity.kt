@@ -4,7 +4,10 @@ import android.os.Bundle
 import com.example.anotheruselessapp.R
 import com.example.anotheruselessapp.data.entity.Element
 import kotlinx.android.synthetic.main.activity_create_shit.*
-import kotlinx.coroutines.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class CreateShitActivity : BaseActivity() {
 

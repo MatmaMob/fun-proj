@@ -9,7 +9,9 @@ import com.example.anotheruselessapp.R
 import com.example.anotheruselessapp.adapters.UselessAdapter
 import com.example.anotheruselessapp.data.entity.Element
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.coroutines.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class MainActivity : BaseActivity() {
 

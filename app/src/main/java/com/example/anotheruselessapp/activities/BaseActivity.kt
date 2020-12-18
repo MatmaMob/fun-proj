@@ -1,18 +1,17 @@
 package com.example.anotheruselessapp.activities
 
+import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.activity.viewModels
-import com.example.anotheruselessapp.repository.ElementRepository
 import com.example.anotheruselessapp.viewmodel.ElementViewModel
-import com.example.anotheruselessapp.viewmodel.ElementViewModelFactory
+import org.koin.androidx.viewmodel.ext.android.getViewModel
 
 open class BaseActivity : AppCompatActivity() {
 
-    protected val viewModel: ElementViewModel by viewModels {
-        ElementViewModelFactory(
-            ElementRepository(
-                applicationContext
-            )
-        )
+    lateinit var viewModel: ElementViewModel
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        viewModel = getViewModel()
+
     }
 }

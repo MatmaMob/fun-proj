@@ -39,6 +39,15 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation 'androidx.fragment:fragment-ktx:1.2.5'
 
+    // Koin AndroidX Scope feature
+    implementation "org.koin:koin-androidx-scope:$koin_version"
+
+    // Koin AndroidX ViewModel feature
+    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
+
+    // Koin AndroidX Fragment Factory
+    implementation "org.koin:koin-androidx-fragment:$koin_version"
+
     implementation 'com.google.android.material:material:1.2.1'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
