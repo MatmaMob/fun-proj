@@ -27,7 +27,7 @@ class MainActivity : BaseActivity() {
         }
 
         openShit.setOnClickListener {
-            startActivity(Intent(this@MainActivity, CreateShitActivity::class.java))
+            startActivity(Intent(this@MainActivity, CreateSomethingActivity::class.java))
         }
     }
 

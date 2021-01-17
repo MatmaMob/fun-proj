@@ -6,7 +6,7 @@ import com.example.anotheruselessapp.data.entity.Element
 import kotlinx.android.synthetic.main.activity_create_shit.*
 import kotlinx.coroutines.*
 
-class CreateShitActivity : BaseActivity() {
+class CreateSomethingActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
