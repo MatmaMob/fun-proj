@@ -1,4 +1,4 @@
-name: Android Build
+name: Android Build & Generate APK
 
 on: pull_request
 
@@ -18,5 +18,11 @@ jobs:
       - name: Run Tests
         run: ./gradlew test
 
-      - name: Build
-        run: ./gradlew assemble
+      - name: Build Debug APK
+        run: ./gradlew assembleDebug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v1
+        with:
+          name: app-debug
+          path: app/build/outputs/apk/debug/app-debug.app
