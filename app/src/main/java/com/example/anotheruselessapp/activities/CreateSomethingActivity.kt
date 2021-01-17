@@ -12,6 +12,7 @@ class CreateSomethingActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_shit)
 
+        
         submit.setOnClickListener {
             GlobalScope.launch(Dispatchers.IO) {
                 viewModel.insertElement(Element(0, titleInput.editText?.text.toString()))
