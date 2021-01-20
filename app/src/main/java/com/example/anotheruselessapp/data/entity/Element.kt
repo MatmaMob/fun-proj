@@ -8,7 +8,7 @@ import com.example.anotheruselessapp.data.Priority
 @Entity(tableName = "elements")
 data class Element(
     @PrimaryKey(autoGenerate = true)
-    val id: Int = 0,
+    val id: Int,
     @ColumnInfo(name = "title")
     val title: String = "",
     @ColumnInfo(name = "description")

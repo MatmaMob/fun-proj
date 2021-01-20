@@ -6,21 +6,23 @@ import android.view.View
 import androidx.lifecycle.observe
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.anotheruselessapp.R
-import com.example.anotheruselessapp.adapters.UselessAdapter
-import com.example.anotheruselessapp.data.entity.Element
+import com.example.anotheruselessapp.adapters.UselessPagedAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.*
 
 class MainActivity : BaseActivity() {
+
+    private lateinit var adapter: UselessPagedAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         viewModel.element.observe(this) {
+            setUselessList()
             uselessHeader.setCounter(it.size)
             if (it.isNotEmpty()) {
-                setUselessList(it)
+                adapter.submitList(it)
             } else {
                 setUselessInformation()
             }
@@ -46,11 +48,11 @@ class MainActivity : BaseActivity() {
         uselessRecycler.visibility = View.VISIBLE
     }
 
-    private fun setUselessList(elements: List<Element>) {
+    private fun setUselessList() {
         removeUselessInformation()
         val lm = LinearLayoutManager(this)
-        val adapter =
-            UselessAdapter(elements, {
+        adapter =
+            UselessPagedAdapter({
                 GlobalScope.launch(Dispatchers.IO) {
                     viewModel.updateElement(it)
                 }
