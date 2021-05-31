@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnotherUselessApp</string>
-    <string name="title_empty_list">Add some tasks you lazy bitch</string>
-    <string name="title_tasks">Tasks</string>
-    <string name="title_create">create</string>
+    <string name="app_name">"nom de l'application"</string>
+    <string name="title_empty_list">"liste vide"</string>
+    <string name="title_tasks">"Tâches"</string>
+    <string name="title_create">"créer"</string>
 </resources>
