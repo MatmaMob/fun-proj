@@ -4,6 +4,6 @@
     <string name="title_empty_list">"liste vide"</string>
     <string name="title_tasks">"Tâches"</string>
     <string name="title_create">"créer"</string>
-    <string name="user">"user"</string>
-    <string name="room">"room"</string>
+    <string name="user">"utilisateur"</string>
+    <string name="room">"chambre"</string>
 </resources>
