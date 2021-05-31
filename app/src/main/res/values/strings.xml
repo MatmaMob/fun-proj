@@ -5,5 +5,5 @@
     <string name="title_tasks">"tasks"</string>
     <string name="title_create">"create"</string>
     <string name="user">"user"</string>
-    <string name="room">"room"</string>
+    <string name="room">"user"</string>
 </resources>
