@@ -2,8 +2,4 @@
 <resources>
     <string name="app_name">"app name"</string>
     <string name="title_empty_list">"empty list"</string>
-    <string name="title_tasks">"tasks"</string>
-    <string name="title_create">"create"</string>
-    <string name="user">"user"</string>
-    <string name="room">"user"</string>
 </resources>
