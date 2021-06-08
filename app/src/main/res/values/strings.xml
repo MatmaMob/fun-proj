@@ -6,4 +6,7 @@
     <string name="title_create">create</string>
     <string name="user">user</string>
     <string name="room">room</string>
+    <string name="one">one content</string>
+    <string name="two">two</string>
+    <string name="three">three</string>
 </resources>
