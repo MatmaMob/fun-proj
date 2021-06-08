@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">"nom de l'application"</string>
-    <string name="title_empty_list">"liste vide"</string>
-    <string name="title_tasks">"Tâches"</string>
-    <string name="title_create">"créer"</string>
-    <string name="user">"utilisateur"</string>
-    <string name="room">"chambre"</string>
-    <string name="one">"one"</string>
-    <string name="two">"two"</string>
-    <string name="three">"three"</string>
+    <string name="app_name">nom de l\'application</string>
+    <string name="title_empty_list">liste vide</string>
+    <string name="title_tasks">Tâches</string>
+    <string name="title_create">créer</string>
+    <string name="user">utilisateur</string>
+    <string name="room">chambre</string>
 </resources>
